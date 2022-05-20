@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "297966099397",
+    "project_id": "demologinoffice",
+    "storage_bucket": "demologinoffice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297966099397:android:1666aeccca6a58ec3709ac",
+        "android_client_info": {
+          "package_name": "com.example.demo_login_office"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297966099397-3vnlunmt6dcpp7ede87upbud5o0cdhc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVU95PlFJGeS113fi6-m4vgvNRFQzv_kg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297966099397-3vnlunmt6dcpp7ede87upbud5o0cdhc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
