@@ -44,6 +44,15 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSAllowsLocalNetworking</key>
-    <true/>
+	<true/>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.297966099397-uho7fsecs08o9qqh7s6cdtojdljifvmk</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

@@ -37,6 +37,13 @@
             {
               "client_id": "297966099397-3vnlunmt6dcpp7ede87upbud5o0cdhc6.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "297966099397-uho7fsecs08o9qqh7s6cdtojdljifvmk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.demoLoginOffice"
+              }
             }
           ]
         }
