@@ -1,0 +1,10 @@
+<!DOCTYPE resources [
+    <!ENTITY clientId "63504bb0-74cf-4ba6-97c9-76d59c1529da">
+    <!ENTITY tenantId "cd61f176-1d9b-44fb-94a3-563affcaf249">
+    ]>
+<resources>
+    <string name="app_name">demo_login_office</string>
+    <string name="client_Id">&clientId;</string>
+    <string name="msalPrefix">msal&clientId;</string>
+    <string name="authority_string_msal">https://login.microsoftonline.com/&tenantId;/v2.0</string>
+</resources>
