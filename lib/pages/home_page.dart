@@ -4,7 +4,12 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({
+    Key? key,
+    this.user,
+  }) : super(key: key);
+
+  final User? user;
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -17,30 +22,31 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Home page'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                widget.user?.toString() ?? '',
+                style: const TextStyle(
+                  color: Colors.green,
+                  fontSize: 16,
+                ),
+              ),
+              const SizedBox(height: 16),
+              CustomButton(
+                title: 'LOGOUT',
                 onPressed: () async {
-                  await FirebaseAuth.instance.signOut ().then((value) {
+                  await FirebaseLogin.I.logout().then((value) {
                     Navigator.pop(context);
                     return null;
                   });
                 },
-                child: const Text('LOGOUT'),
               ),
-            ),
-            const SizedBox(height: 16),
-            CustomButton(
-              title: 'Logout google',
-              onPressed: () {
-                FirebaseLogin.I.logout();
-              },
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
